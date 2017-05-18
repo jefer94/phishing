@@ -1,0 +1,28 @@
+{
+  "name": "phishing",
+  "version": "1.0.0",
+  "description": "an example of phishing from side web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefer94/phishing.git"
+  },
+  "keywords": [
+    "phishing"
+  ],
+  "author": "Jeferson De Freitas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefer94/phishing/issues"
+  },
+  "homepage": "https://github.com/jefer94/phishing#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.9.9",
+    "pug": "^2.0.0-rc.1"
+  }
+}

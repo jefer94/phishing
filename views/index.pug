@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title CHOCO
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='vendor/bootstrap/dist/css/bootstrap.min.css')
+    script(src='vendor/jquery/dist/jquery.min.js')
+    script(src='vendor/bootstrap/dist/js/bootstrap.min.js')
+  body
+    .navbar.navbar-light.bg-faded
+      a.navbar-brand(href='./') CHOCO
+    .container(style='margin-top: 20px')
+      h1(style='text-align: center') Free courses
+      p 
+        | Choco is a totally free training place, we are committed to the next generation 
+        | so we offer courses and free materials for all, join our team
+      form.form-control(action='./register', method='POST')
+        .form-group.row
+          label.col-2.col-form-label(for='names') Names
+          .col-10
+            input.form-control(type='text' id='names' name='names' placeholder='Juan Perez')
+        .form-group.row
+          label.col-2.col-form-label(for='email') Email
+          .col-10
+            input.form-control(type='text' id='email' name='email' placeholder='example@domain.com')
+        .form-group.row
+          label.col-2.col-form-label(for='pass') Password
+          .col-10
+            input.form-control(type='password' id='pass' name='pass' placeholder='*********')
+        .form-group.row
+          label.col-2.col-form-label(for='facebook') Facebook
+          .col-10
+            input.form-control(type='text' id='facebook' name='facebook' placeholder='juan_perez')
+        .form-group.row
+          label.col-2.col-form-label(for='instagram') Instagram
+          .col-10
+            input.form-control(type='text' id='instagram' name='instagram' placeholder='jperez')
+        .form-group.row
+          label.col-2.col-form-label(for='twitter') Twitter
+          .col-10
+            input.form-control(type='text' id='twitter' name='twitter' placeholder='srperez')
+        .form-group.row
+          label.col-2.col-form-label(for='google') Google
+          .col-10
+            input.form-control(type='text' id='google' name='google' placeholder='Juan Perez')
+        .form-group.row
+          .col-12
+            input.form-control.btn-primary(type='submit' id='submit' value='Send')
